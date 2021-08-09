@@ -375,6 +375,7 @@ function fullImgFun(){
 let FullImg = new fullImgFun()
 images.forEach((currentValue, index)=>{
    currentValue.addEventListener("click", ()=>{
+   alert("Clicked")
    FullImg.render(currentValue)
    })})
 myclose.addEventListener("click", ()=>{
