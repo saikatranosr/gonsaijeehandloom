@@ -373,7 +373,7 @@ function fullImgFun(){
       fulScrn.style.display = 'none'  
     }}
 let FullImg = new fullImgFun()
-my_images.forEach((currentValue, index)=>{
+Array.prototype.forEach.call(my_images, currentValue=>{
    currentValue.addEventListener("click", ()=>{
    alert("Clicked")
    FullImg.render(currentValue)
