@@ -361,7 +361,7 @@
     -->
     <script type="text/javascript" charset="utf-8">
         let fulScrn = document.getElementsByClassName('fulScrn')[0]
-let images = document.getElementsByClassName('img-curved')
+let my_images = document.getElementsByClassName('img-curved')
 let myclose = document.getElementById('close')
 let targetImg = document.getElementById('targetImg')
 function fullImgFun(){
@@ -373,7 +373,7 @@ function fullImgFun(){
       fulScrn.style.display = 'none'  
     }}
 let FullImg = new fullImgFun()
-images.forEach((currentValue, index)=>{
+my_images.forEach((currentValue, index)=>{
    currentValue.addEventListener("click", ()=>{
    alert("Clicked")
    FullImg.render(currentValue)
